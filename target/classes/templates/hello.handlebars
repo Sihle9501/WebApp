@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Greet me</h1>
+
+<form action="/hello" method="post" >
+    <input type="text" name="username">
+    <input type="submit" >
+
+</form>
+
+<h2>{{greeting}}</h2>
+
+<div>
+     <ul>
+     {{#each users}}
+  <li>{{this}}</li>
+  {{/each}}
+
+     </ul>
+
+     {{!-- <form method="post" action="/Tests/Post">
+             <input type="radio" name="sihle" value="Cats">Sihle<br>
+             <input type="radio" name="sandile" value="Dogs">Sandile<br>
+             <input type="radio" name="andisiwe" value="Birds">Andisiwe<br>
+             <br>
+     </form> --}}
+</div>
+</body>
+</html>
